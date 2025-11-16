@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sumiran Subedi | Portfolio</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, #1a1a2e, #16213e, #0f3460);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            color: #fff;
+        }
+        .container {
+            text-align: center;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+        h1 {
+            font-size: 48px;
+            margin-bottom: 10px;
+            letter-spacing: 1px;
+            animation: slideDown 1.2s ease;
+        }
+        p {
+            font-size: 20px;
+            opacity: 0.9;
+            animation: fadeIn 2s ease;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes slideDown {
+            from { transform: translateY(-20px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        .glow {
+            position: absolute;
+            width: 300px;
+            height: 300px;
+            background: rgba(255, 255, 255, 0.1);
+            filter: blur(120px);
+            animation: float 6s infinite ease-in-out alternate;
+        }
+        @keyframes float {
+            from { transform: translateY(-40px); }
+            to { transform: translateY(40px); }
+        }
+        .glow:nth-child(1) { top: 10%; left: 15%; }
+        .glow:nth-child(2) { bottom: 10%; right: 10%; animation-delay: 2s; }
+    </style>
+</head>
+<body>
+    <div class="glow"></div>
+    <div class="glow"></div>
+
+    <div class="container">
+        <h1>Sumiran Subedi</h1>
+        <p>Portfolio Website — Under Construction 🚧</p>
+    </div>
+</body>
+</html>
